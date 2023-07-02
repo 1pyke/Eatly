@@ -1,0 +1,67 @@
+.card {
+    background: linear-gradient(to top, #f7edf8, white, white);
+    box-shadow: 0px 25px 30px -4px rgba(247, 237, 248, 0.8);
+}
+
+.cardIcon {
+    background-Color: #a674fd;
+}
+
+.carouselButtons {
+    background-Color: #fef7ff
+}
+
+.cardAnimation {
+    transition: transform 0.3s ease;
+}
+
+.cardAnimation:hover {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background: linear-gradient(to right, #fed583, #f6ba32);
+    height: 320px;
+    transform: translateY(-20px);
+}
+
+.cardAnimation:hover h1,
+.cardAnimation:hover h3 {
+    color: #815804;
+}
+
+.cardIcon {
+    background-color: #8036ff;
+}
+
+.cardAnimation:hover .cardIcon {
+    background: linear-gradient(to right, #ecb641, #f5af19);
+    border-color: #ffde80;
+    height: 55px;
+}
+
+.cardAnimation:hover svg {
+    color: red;
+}
+
+/* Additional styling as per your requirements */
+
+.carouselContainer {
+    position: relative;
+    padding: 20px;
+    background-color: #fef7ff;
+    border-radius: 90px 90px 90px 90px;
+    height: 320px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #f9f3f8;
+    box-shadow: 0px 25px 30px -4px rgba(247, 237, 248, 0.8);
+}
+
+.sliderClass {
+    background: linear-gradient(to right, #b080fe, #9255fb);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    height: 280px;
+    z-index: 2;
+}

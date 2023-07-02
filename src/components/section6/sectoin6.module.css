@@ -1,0 +1,25 @@
+.imageContainer {
+    background: linear-gradient(to right, #f7edf8, #f7edf8, #f9f3f5);
+    box-shadow: 0px 60px 200px -4px rgba(247, 237, 248, 0.8);
+    border-radius: 365px 365px 0px 30px;
+}
+
+.aboutUsIcon {
+    background-color: #a975fe
+}
+
+.aboutText {
+    color: #6d539d
+}
+
+.containerComments {
+    background-color: #f9f1fe;
+}
+
+.commentText {
+    color: #bfb6c9;
+}
+
+.commentAuthor {
+    color: #a273f6
+}

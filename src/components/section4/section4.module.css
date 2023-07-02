@@ -1,0 +1,17 @@
+.border {
+    background: linear-gradient(to right, #f3ecf2, #f6e9f7);
+    box-shadow: 0px 25px 30px -4px rgba(247, 237, 248, 0.8),
+}
+
+.box {
+    background: linear-gradient(to right, #b080fe, #9255fb);
+
+}
+
+.iconBox {
+    background-color: #8242dd;
+}
+
+.span {
+    color: #fdbe23;
+}

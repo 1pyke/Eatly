@@ -1,0 +1,39 @@
+.imageShadow {
+    background: linear-gradient(to right, #f7edf8, #f7edf8, #f9f3f5);
+    box-shadow: 0px 60px 400px -4px rgba(247, 237, 248, 0.8);
+    border-radius: 365px 365px 40px 40px;
+}
+
+.card {
+    background-color: #a975fe
+}
+
+.boxText {
+    color: #6d539d;
+}
+
+.selectedCardBackground {
+    background-color: #f9f1fe;
+    background: linear-gradient(to right, #f7edf8, #f7edf8, #f9f3f5);
+    box-shadow: 0px 60px 200px -4px rgba(247, 237, 248, 0.8);
+}
+
+.selectedCardIcon {
+    background-color: #f4ce6b;
+}
+
+.cardIconColor {
+    background-color: #a975fe;
+}
+
+.cardText {
+    color: #6c55a3;
+}
+
+.selectedCardText {
+    color: #ac81fd;
+}
+
+.benfit {
+    color: #a69db1;
+}

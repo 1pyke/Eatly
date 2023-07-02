@@ -1,0 +1,12 @@
+.footer {
+    background: linear-gradient(to right, white, #f7edf8, white);
+    box-shadow: 0px -6px 200px -4px rgba(247, 237, 248, 0.8);
+}
+
+.typographyHeading {
+    color: #a771f7
+}
+
+.typographyLinks {
+    color: #7059a3;
+}

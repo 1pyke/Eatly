@@ -1,0 +1,5 @@
+.mainHeaderLogo {
+    background: -webkit-linear-gradient(#f9d673, #e5b15f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

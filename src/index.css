@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 
 body {
   margin: 0;
@@ -9,9 +11,27 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.scrollBar {
+  scrollbar-color: #a975fc #f6ebf9;
+}
+
+.scrollBar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollBar::-webkit-scrollbar-track {
+  background-color: #f6ebf9;
+}
+
+.scrollBar::-webkit-scrollbar-thumb {
+  background-color: #a975fc;
+  border-radius: 4px;
 }
