@@ -77,7 +77,7 @@
     /* background: linear-gradient(90deg, #fafafa, 50%, #c9acec, #fafafa, 50%); */
     background: #fafafa;
     background: linear-gradient(to right, #fafafa, 50%, #e2cfff, 65%, #fafafa);
-    background: -webkit-linear-gradient(to right, #fafafa, #f2e9ff, #fafafa);
+    background: -webkit-linear-gradient(to right, #fafafa, 50%, #e2cfff, 65%, #fafafa);
 }
 
 @keyframes roll2 {
