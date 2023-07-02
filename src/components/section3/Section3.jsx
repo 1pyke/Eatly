@@ -28,7 +28,7 @@ const Section3 = () => {
     },
   ];
   return (
-    <div className="flex mt-24">
+    <div id="news" className="flex mt-24">
       <div className={`flex-1 drop-shadow-2xl `}>
         <img
           src={Section3Image}

@@ -29,7 +29,7 @@ const Section3 = () => {
     initialSlide: 0,
   };
   return (
-    <div className="flex mt-24">
+    <div id="aboutUs" className="flex mt-24">
       <div
         className={`flex-1 w-full drop-shadow-2xl mr-20 ${styles.imageContainer}`}
       >

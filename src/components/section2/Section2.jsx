@@ -69,7 +69,10 @@ export default function Section2() {
   ];
   return (
     <>
-      <div className={`relative mt-6 w-full mb-14 h-[120px] ${styles.card}`}>
+      <div
+        id="programs"
+        className={`relative mt-6 w-full mb-14 h-[120px] ${styles.card}`}
+      >
         <Typography variant="h5" color="blue-gray" className="mb-2">
           <div className="flex p-4 justify-between">
             <div className="justify-center flex">
@@ -82,7 +85,7 @@ export default function Section2() {
                 style={{ color: "#7158a2" }}
                 className="flex items-center font-bold text-2xl"
               >
-                Our Best Progframs
+                Our Best Programs
               </div>
             </div>
             <div>

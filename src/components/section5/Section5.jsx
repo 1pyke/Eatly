@@ -77,7 +77,7 @@ const Section5 = () => {
     },
   ];
   return (
-    <div className="flex h-[800px] mt-20 mb-15">
+    <div id="services" className="flex h-[800px] mt-20 mb-15">
       <div className="flex-1">
         <div className="justify-start flex pl-6 mb-7">
           <div
