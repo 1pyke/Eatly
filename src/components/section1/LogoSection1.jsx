@@ -1,10 +1,12 @@
 import React from "react";
 import HealthLogo from "../../images/logo1.png";
 import EatingLogo from "../../images/logo2.png";
-
+import styles from "./section1.module.css";
 const LogoSection1 = () => {
   return (
-    <div className="h-[100px] flex items-center my-16">
+    <div
+      className={`${styles.logoBackground} h-[200px] flex items-center mb-16`}
+    >
       <div className="flex">
         <img
           src={HealthLogo}

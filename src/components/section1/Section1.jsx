@@ -1,5 +1,5 @@
 import React from "react";
-import Section1Image from "../../images/EatingEtiquette.jpg";
+import Section1Image from "../../images/main__image.jpg";
 import ReusableButton from "../reusableComponents/ReusableButton";
 import { IconButton } from "@material-tailwind/react";
 import { AiFillCaretRight } from "react-icons/ai";
@@ -57,10 +57,10 @@ const Section1 = () => {
       </div>
 
       {/* Right Section */}
-      <div className="flex-1 h-full relative top-40">
+      <div className="w-[40%] h-[80vh] relative z-10  mt-[5%] ">
         <img
           src={Section1Image}
-          className="bg-cover rounded-t-full"
+          className={` bg-cover rounded-t-[40%] rounded-b-md `}
           alt="Logo"
         />
       </div>

@@ -39,7 +39,7 @@ const MainHeader = () => {
               smooth={true}
               to={link.to}
               key={index}
-              className="relative flex items-center h-full mr-16 text-gray-300 hover:text-gray-400 text-xl transition-colors duration-200"
+              className="relative cursor-pointer flex items-center h-full mr-16 text-gray-300 hover:text-gray-400 text-xl transition-colors duration-200"
             >
               {link.label}
             </Link>

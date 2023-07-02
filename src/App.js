@@ -19,6 +19,7 @@ const App = () => {
     backgroundRepeat: 'no-repeat',
     position: 'relative',
     minHeight: '100vh',
+    height: '100vh',
     display: 'flex',
     justifyContent: 'center',
   };
@@ -33,7 +34,7 @@ const App = () => {
         </div>
       </div>
       {/* Section with LogoSection1 and Section2 */}
-      <div className='pl-40 pr-40'>
+      <div className='px-40'>
         <LogoSection1 />
         <Section2 />
         <Section3 />
