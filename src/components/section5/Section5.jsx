@@ -1,7 +1,11 @@
 import React, { useRef } from "react";
-import { IoDiamond } from "react-icons/io5";
 import { Button, IconButton } from "@material-tailwind/react";
 import { AiFillCaretLeft, AiFillCaretRight } from "react-icons/ai";
+import { HiClipboardDocumentCheck } from "react-icons/hi2";
+import { AiFillClockCircle } from "react-icons/ai";
+import { FaPaperPlane } from "react-icons/fa";
+import { FaRegCalendarAlt } from "react-icons/fa";
+import { BsFillShieldLockFill } from "react-icons/bs";
 import Scetion5Card from "./Scetion5Card";
 import lowCalorie from "../../images/lowCalorie.jpeg";
 import FridgeRaidFriedRice from "../../images/Fridge-raid-fried-rice-.jpg";
@@ -30,27 +34,27 @@ const Section5 = () => {
   };
   const menu = [
     {
-      image: "",
+      icon: AiFillClockCircle,
       name: "Breakfast Recipes",
     },
     {
-      image: "",
+      icon: FaPaperPlane,
       name: "Low-Calorie Recipes",
     },
     {
-      image: "",
+      icon: FaRegCalendarAlt,
       name: "Holiday Recipes",
     },
     {
-      image: "",
+      icon: BsFillShieldLockFill,
       name: "Restriction Recipes",
     },
     {
-      image: "",
+      icon: FaPaperPlane,
       name: "Vegetarian Recipes",
     },
     {
-      image: "",
+      icon: AiFillClockCircle,
       name: "Gluten-Free Recipes",
     },
   ];
@@ -83,7 +87,7 @@ const Section5 = () => {
           <div
             className={`justify-center flex rounded-2xl mr-5 items-center w-16 h-16 border border-gray-200 ${styles.icon}`}
           >
-            <IoDiamond color="#f4ce6b" size={35} />
+            <HiClipboardDocumentCheck color="#f4ce6b" size={35} />
           </div>
           <div
             className={`flex items-center font-bold text-5xl ${styles.heading}`}

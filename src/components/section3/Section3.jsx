@@ -1,28 +1,31 @@
 import React from "react";
 import Section3Image from "../../images/Section3Image.png";
-import { IoDiamond } from "react-icons/io5";
 import Section3Cards from "./Section3Cards";
 import styels from "./Section3.module.css";
+import { IoDiamond } from "react-icons/io5";
+import { AiFillHeart, AiFillStar } from "react-icons/ai";
+import { BsShieldFillCheck } from "react-icons/bs";
+import { PiChartLineUpFill } from "react-icons/pi";
 
 const Section3 = () => {
   const benfits = [
     {
-      icon: "",
+      icon: AiFillHeart,
       title: "Becomes Healthier ",
       description: "immune will\nstronger if the body is Healthier",
     },
     {
-      icon: "",
+      icon: PiChartLineUpFill,
       title: "Increase Energy",
       description: "Have enough energy can help carry out a routine",
     },
     {
-      icon: "",
+      icon: BsShieldFillCheck,
       title: "Controlling Weight",
       description: "Body will feel lighter and will not be easily tired",
     },
     {
-      icon: "",
+      icon: AiFillStar,
       title: "Becomes Happier",
       description: "Living a healthy life aslo increase self-confidence",
     },

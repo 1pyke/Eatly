@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { IoDiamond } from "react-icons/io5";
 
 const Scetion5Card = ({ item }) => {
   const [selected, setSelected] = useState();
@@ -22,7 +21,9 @@ const Scetion5Card = ({ item }) => {
         }}
         className="justify-center flex rounded-2xl mr-5 items-center w-16 h-16 border border-gray-200"
       >
-        <IoDiamond color={selected ? "white" : "#f4ce6b"} size={35} />
+        {item.icon ? (
+          <item.icon color={selected ? "white" : "#f4ce6b"} size={35} />
+        ) : null}
       </div>
       <h1
         style={{ color: selected ? "#a377ec" : "#6f5695" }}

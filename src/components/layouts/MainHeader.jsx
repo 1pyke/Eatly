@@ -34,7 +34,6 @@ const MainHeader = () => {
           {/* Map over navigation details and generate links */}
           {navDetails.map((link, index) => (
             <Link
-              duration={500}
               offset={-40}
               spy={true}
               smooth={true}

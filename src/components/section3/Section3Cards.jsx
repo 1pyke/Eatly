@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { IoDiamond } from "react-icons/io5";
 import styles from "./Section3.module.css";
 
 const Section3Cards = ({ benfit }) => {
@@ -18,7 +17,9 @@ const Section3Cards = ({ benfit }) => {
           selected ? styles.selectedCardIcon : styles.cardIconColor
         }`}
       >
-        <IoDiamond color={selected ? "white" : "#f4ce6b"} size={35} />
+        {benfit.icon ? (
+          <benfit.icon color={selected ? "white" : "#f4ce6b"} size={35} />
+        ) : null}
       </div>
       <h1
         className={`text-3xl font-bold mb-4 ${

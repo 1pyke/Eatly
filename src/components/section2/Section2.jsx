@@ -2,6 +2,10 @@ import { Typography, IconButton } from "@material-tailwind/react";
 import { useRef } from "react";
 import { FaCrown } from "react-icons/fa";
 import { AiFillCaretLeft, AiFillCaretRight } from "react-icons/ai";
+import { BiRestaurant } from "react-icons/bi";
+import { IoMdRestaurant, IoIosRestaurant } from "react-icons/io";
+import { RiShieldStarFill } from "react-icons/ri";
+
 import Slider from "react-slick";
 import styles from "./carousel.module.css";
 
@@ -27,42 +31,42 @@ export default function Section2() {
 
   const carouselData = [
     {
-      icon: "",
+      icon: IoIosRestaurant,
       heading: "Healthy Recipe",
       description: "Healthier Recipes, from food & nutrition experts",
     },
     {
-      icon: "",
+      icon: BiRestaurant,
       heading: "Healthy Meals",
       description: "Learn how to become a meal-planning pro",
     },
     {
-      icon: "",
+      icon: IoMdRestaurant,
       heading: "Healthy Eating",
       description: "Eat healthy with our expert & inspiration tips",
     },
     {
-      icon: "",
+      icon: RiShieldStarFill,
       heading: "Healthy Lifes",
       description: "Your life is your choice, make yourself healthier",
     },
     {
-      icon: "",
+      icon: IoIosRestaurant,
       heading: "Healthy Recipe",
       description: "Healthier Recipes, from food & nutrition experts",
     },
     {
-      icon: "",
+      icon: BiRestaurant,
       heading: "Healthy Meals",
       description: "Learn how to become a meal-planning pro",
     },
     {
-      icon: "",
+      icon: IoMdRestaurant,
       heading: "Healthy Eating",
       description: "Eat healthy with our expert & inspiration tips",
     },
     {
-      icon: "",
+      icon: RiShieldStarFill,
       heading: "Healthy Lifes",
       description: "Your life is your choice, make yourself healthier",
     },
@@ -110,6 +114,9 @@ export default function Section2() {
         </Typography>
       </div>
       <div className={styles.carouselContainer}>
+        {/* I encountered difficulty repositioning the cards within the Slider component due
+         to conflicts with the Slider's internal CSS.
+        Despite my attempts to override the Slider's CSS properties, the desired changes did not take effect.*/}
         <Slider className={styles.sliderClass} ref={sliderRef} {...settings}>
           {carouselData.map((card, i) => (
             <div
@@ -118,14 +125,14 @@ export default function Section2() {
             >
               <div className="w-full flex justify-center items-center">
                 <div
-                  className={`justify-center flex rounded-xl mr-5 items-center w-14 h-14 border-2 border-gray-400 mb-6 mt-10 ${styles.cardAnimation} ${styles.cardIcon}`}
+                  className={`justify-center flex rounded-xl mr-5 items-center w-14 h-14 border-2 border-gray-400 mb-6 mt-10 ${styles.cardIcon}`}
                 >
-                  <FaCrown color="#fde199" size={35} />
+                  {card.icon ? <card.icon color="#fde199" size={35} /> : null}
                 </div>
               </div>
 
               <>
-                <h1 className="text-white text-3xl text-center mb-8">
+                <h1 className="text-white text-3xl text-center mb-4">
                   {card.heading}
                 </h1>
                 <h3 className="text-gray-300 text-2xl text-center flex flex-col flex-wrap opacity-80 ">

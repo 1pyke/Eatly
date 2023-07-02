@@ -16,10 +16,9 @@
 }
 
 .cardAnimation:hover {
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    border-radius: 50px 50px 15px 15px;
     background: linear-gradient(to right, #fed583, #f6ba32);
-    height: 320px;
+    height: 300px;
     transform: translateY(-20px);
 }
 
