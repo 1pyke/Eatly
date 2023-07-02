@@ -28,6 +28,20 @@ const Section3 = () => {
     slidesToScroll: 1,
     initialSlide: 0,
   };
+  const comments = [
+    {
+      comment:
+        "Eatly really helps me to maintain food intake, is perfect for those of you who want to diet or just make the body more healthy. In addition, Eatly helped me create a menu that is suitable for the family.",
+      commentAuthor: "Rara Sanchez",
+      authorJob: "Freelancer",
+    },
+    {
+      comment:
+        "I've been using Eatly for a month now, and it has completely transformed my eating habits. The personalized meal plans and recipes have made it easy for me to stay on track and make healthier choices. Highly recommended!",
+      commentAuthor: "John Doe",
+      authorJob: "Fitness Trainer",
+    },
+  ];
   return (
     <div id="aboutUs" className="flex mt-24">
       <div
@@ -74,57 +88,29 @@ const Section3 = () => {
               ref={sliderRef}
               {...settings}
             >
-              <div key={1}>
-                <div className="w-full">
-                  <p
-                    className={`text-xl font-bold mb-4 opacity-90 ${styles.commentText}`}
-                  >
-                    Eatyl really helps me to maintain food intake, is perfect
-                    for those of you who want to diet or just make the body more
-                    healthy. in addition Eatly helped me to create a menu that
-                    is suitable for the familty
-                  </p>
-                  <div className="flex flex-col">
-                    <h1
-                      className={`text-2xl font-bold ${styles.commentAuthor}`}
+              {comments.map((comment, i) => (
+                <div key={i}>
+                  <div className="w-full">
+                    <p
+                      className={`text-xl font-bold mb-4 opacity-90 ${styles.commentText}`}
                     >
-                      Rara Sanchez
-                    </h1>
-                    <h2
-                      className={`text-2xl mb-6 font-bold  opacity-90 ${styles.commentText}`}
-                    >
-                      Freelancer
-                    </h2>
+                      {comment.comment}
+                    </p>
+                    <div className="flex flex-col">
+                      <h1
+                        className={`text-2xl font-bold ${styles.commentAuthor}`}
+                      >
+                        {comment.commentAuthor}
+                      </h1>
+                      <h2
+                        className={`text-2xl mb-6 font-bold  opacity-90 ${styles.commentText}`}
+                      >
+                        {comment.authorJob}
+                      </h2>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div key={2}>
-                <div className="w-full">
-                  <p
-                    style={{ color: "#bfb6c9" }}
-                    className="text-xl font-bold mb-4 opacity-90"
-                  >
-                    Eatyl really helps me to maintain food intake, is perfect
-                    for those of you who want to diet or just make the body more
-                    healthy. in addition Eatly helped me to create a menu that
-                    is suitable for the familty
-                  </p>
-                  <div className="flex flex-col">
-                    <h1
-                      style={{ color: "#a273f6" }}
-                      className="text-2xl font-bold"
-                    >
-                      Rara Sanchez
-                    </h1>
-                    <h2
-                      className="text-2xl mb-6 font-bold  opacity-90"
-                      style={{ color: "#bfb6c9" }}
-                    >
-                      Freelancer
-                    </h2>
-                  </div>
-                </div>
-              </div>
+              ))}
             </Slider>
             <div className="flex justify-end ">
               <IconButton
